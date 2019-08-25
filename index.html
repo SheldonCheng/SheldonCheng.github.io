@@ -821,10 +821,10 @@
           <section>
             <h2>Hypertext Mark-up Language (HTML)</h2>
             <ul>
-              <li><strong>Structures</strong> the document and tells browsers what a certain element's function is</li>
               <li>Content is "marked-up" using tags</li>
-              <li>Tags usually (but not always) come in pairs,<pre><code class="html">&lt;p&gt;This is an example of a paragraph element&lt;/p&gt;</code></pre></li>
+              <li>Tags usually (but not always) come in pairs,<pre><code class="html">&lt;h1&gt;This is the title of my document&lt;/h1&gt;</code></pre></li>
               <li>The opening tag, closing tag and everything in between is a <strong>HTML element</strong></li>
+              <li><strong>Structures</strong> the document and tells browsers what a certain element's function is</li>
             </ul>
             <aside class="notes">
               Tags are markers wrapped around text in the document to indicate how user-agents should interpret it
@@ -835,15 +835,15 @@
 
           <section>
             <figure>
-              <img src="img/british-shorthair.jpg" alt="British shorthair kitten" class="plain" style="max-height:75vh">
+              <img src="img/british-shorthair.jpg" alt="British shorthair kitten" class="plain" style="max-height:60vh">
               <figcaption>What on earth are you doing?</figcaption>
             </figure>
           </section>
 
           <section>
             <h2>Structure of HTML document</h2>
-            <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+            <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
   &lt;head&gt;
     &lt;title&gt;Example page&lt;/title&gt;
   &lt;/head&gt;
@@ -859,7 +859,7 @@
             <ul>
               <li>Appears just above the <code>&lt;html&gt;</code> tag</li>
               <li>Tells the browser to render the HTML in <strong>standards</strong> mode</li>
-              <li>Let's validation software know which version of HTML to validate against</li>
+              <li>Lets validation software know which version of HTML to validate against</li>
               <li>Advised to use the <strong>HTML5 doctype</strong></li>
             </ul>
             <aside class="notes">
@@ -870,8 +870,8 @@
 
           <section>
             <h2><code>&lt;html&gt;</code> element</h2>
-            <pre><code>&lt;html lang="en"&gt;
-// HTML code for web page
+            <pre><code class="html">&lt;html lang="en"&gt;
+<!-- HTML code for web page -->
 &lt;/html&gt;</code></pre>
             <ul>
               <li>Represents the root of an HTML document</li>
@@ -1138,7 +1138,7 @@
 
           <section>
             <h2>Structure of a CSS rule</h2>
-            <pre><code>selector {
+            <pre><code class="css">selector {
   property1: value;
   property2: value;
   property3: value;
@@ -1378,19 +1378,19 @@
               </div>
             </div>
             <div class="tl-col">
-              <div>
+              <div style="flex: 1; margin: 0 5%;">
                 <pre><code>ul {
   // CSS properties
 }</code></pre>
                 <p>0, 0, 0, 1</p>
               </div>
-              <div>
+              <div style="flex: 1; margin: 0 5%;">
                 <pre><code>.class-1 .class-2 p {
   // CSS properties
 }</code></pre>
                 <p>0, 0, 2, 1</p>
               </div>
-              <div>
+              <div style="flex: 1; margin: 0 5%;">
                 <pre><code>#id-1 .class-3 div {
   // CSS properties
 }</code></pre>
