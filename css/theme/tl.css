@@ -299,11 +299,22 @@ h1.tl-logo {
   margin-bottom: 1em; }
 
 .reveal figure img {
-  margin: 0; }
+  margin: 0;
+  border: none;
+  box-shadow: none; }
 
 .reveal figcaption {
   font-size: 75%;
   font-style: italic; }
+
+.agenda figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.reveal .agenda img {
+  margin-bottom: 2rem; }
 
 section.tl-reverse h1,
 section.tl-reverse h2,
