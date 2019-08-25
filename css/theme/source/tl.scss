@@ -17,8 +17,10 @@
 @import '../template/theme';
 
 .reveal pre code {
-  background: #3f3f3f;
-  color: #dcdcdc;
+  // background: #3f3f3f;
+  // color: #dcdcdc;
+  padding: 2rem;
+  font-family: "Roboto Mono", monospace;
 }
 // ---------------------------------------------
 
