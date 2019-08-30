@@ -320,6 +320,45 @@ h1.tl-logo {
 .reveal .agenda img {
   margin-bottom: 2rem; }
 
+.tl-col.specificity {
+  margin-bottom: 5rem; }
+
+.specificity p {
+  margin-bottom: 3rem; }
+
+.specificity div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3%;
+  flex: 1; }
+
+.specificity .tl-box {
+  margin-top: auto;
+  flex: 0 0 100px;
+  position: relative; }
+
+.specificity .tl-box::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-width: 0 20px 20px;
+  border-style: solid;
+  border-color: transparent transparent black;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.specificity .tl-box::after {
+  content: ",";
+  font-size: 200%;
+  position: absolute;
+  left: 115%;
+  bottom: -16%; }
+
+.specificity div:last-child .tl-box::after {
+  display: none; }
+
 section.tl-reverse h1,
 section.tl-reverse h2,
 section.tl-reverse p,

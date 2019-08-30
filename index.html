@@ -1168,11 +1168,12 @@
             <p>Used to select tags that are children of other tags</p>
             <div class="tl-col">
               <div style="max-width:50%;">
-                <pre><code>&lt;ul&gt;
+                <pre><code>  &lt;ul&gt;
     &lt;li&gt;4 large eggs&lt;/li&gt;
     &lt;li&gt;1/4 cup milk&lt;/li&gt;
     &lt;li&gt;2 tsp. butter&lt;/li&gt;
   &lt;/ul&gt;
+
   &lt;ol&gt;
     &lt;li&gt;BEAT eggs, milk, salt and pepper in medium bowl until blended.&lt;/li&gt;
     &lt;li&gt;HEAT butter in large nonstick skillet over medium heat until hot. POUR IN egg mixture. As eggs begin to set, GENTLY PULL the eggs across the pan with a spatula, forming large soft curds.&lt;/li&gt;
@@ -1359,42 +1360,42 @@
 
           <section>
             <h2>CSS Specificity</h2>
-            <div class="tl-col">
-              <div class="flex-4" style="margin-right:0.5em">
-                <div class="tl-box">0-∞</div>
+            <div class="tl-col specificity">
+              <div>
                 <p>Inline styles</p>
+                <div class="tl-box"></div>
               </div>
-              <div class="flex-4" style="margin-right:0.5em">
-                <div class="tl-box">0-∞</div>
+              <div>
                 <p>IDs</p>
+                <div class="tl-box"></div>
               </div>
-              <div class="flex-4" style="margin-right:0.5em">
-                <div class="tl-box">0-∞</div>
+              <div>
                 <p>Classes, attributes and pseudo-classes</p>
+                <div class="tl-box"></div>
               </div>
-              <div class="flex-4">
-                <div class="tl-box">0-∞</div>
-                <p>Elements and pseudo-elements</p>
+              <div>
+                  <p>Elements and pseudo-elements</p>
+                <div class="tl-box"></div>
               </div>
             </div>
             <div class="tl-col">
               <div style="flex: 1; margin: 0 5%;">
-                <pre><code>ul {
+                <pre class="fragment"><code>ul {
   // CSS properties
 }</code></pre>
-                <p>0, 0, 0, 1</p>
+                <p class="fragment">0, 0, 0, 1</p>
               </div>
               <div style="flex: 1; margin: 0 5%;">
-                <pre><code>.class-1 .class-2 p {
+                <pre class="fragment"><code>.class-1 .class-2 p {
   // CSS properties
 }</code></pre>
-                <p>0, 0, 2, 1</p>
+                <p class="fragment">0, 0, 2, 1</p>
               </div>
               <div style="flex: 1; margin: 0 5%;">
-                <pre><code>#id-1 .class-3 div {
+                <pre class="fragment"><code>#id-1 .class-3 div {
   // CSS properties
 }</code></pre>
-                <p>0, 1, 1, 1</p>
+                <p class="fragment">0, 1, 1, 1</p>
               </div>
             </div>
             <aside class="notes">
