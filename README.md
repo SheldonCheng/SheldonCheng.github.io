@@ -1,3 +1,3 @@
 # TechLadies Pre Bootcamp Workshop #1
 
-At TechLadies, 14 July, 2018.
+At TechLadies, Rakuten 31 Aug, 2019.
